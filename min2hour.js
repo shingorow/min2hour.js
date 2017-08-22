@@ -1,14 +1,14 @@
 (function(global) {
 
 	var Min2Hour = (function () {
-  	function Min2Hour(munites) {
-      this.munites = munites;
+  	function Min2Hour(minutes) {
+      this.minutes = minutes;
       this.minPerHour = 60;
     }
     
     Min2Hour.prototype.parse = function() {
-      var hour = this.munites / this.minPerHour;
-      var min = this.munites % this.minPerHour;
+      var hour = this.minutes / this.minPerHour;
+      var min = this.minutes % this.minPerHour;
       hour = Math.floor(hour);
       
       return {
